@@ -39,6 +39,4 @@ def get_date_main():
 
 
 
-
-
 get_date_main()
