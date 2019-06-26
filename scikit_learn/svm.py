@@ -1,7 +1,7 @@
 # coding: utf-8
 
 import numpy as np
-import matplotlib.pyplot as plt
+import matplotlib_demo.pyplot as plt
 from sklearn.datasets.samples_generator import make_blobs
 from sklearn.svm import SVC
 from sklearn.datasets.samples_generator import make_circles
