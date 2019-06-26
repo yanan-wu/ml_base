@@ -37,6 +37,4 @@ def get_date_main():
     print(accuracy)
 
 
-
-
 get_date_main()
