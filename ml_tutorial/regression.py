@@ -9,6 +9,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
 from matplotlib import style
+import pickle
 
 
 def get_date_main():
@@ -36,6 +37,13 @@ def get_date_main():
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
     clf = LinearRegression()
     clf.fit(X_train, y_train)
+
+    with open('linearregression.pickle', 'wb') as f:
+        pickle.dump(clf, f)
+
+    pickle_in = open('linearregression.pickle', 'rb')
+    clf = pickle.load(pickle_in)
+
     accuracy = clf.score(X_test, y_test)
     # print(accuracy)
 
