@@ -38,11 +38,11 @@ def get_date_main():
     clf = LinearRegression()
     clf.fit(X_train, y_train)
 
-    with open('linearregression.pickle', 'wb') as f:
-        pickle.dump(clf, f)
-
-    pickle_in = open('linearregression.pickle', 'rb')
-    clf = pickle.load(pickle_in)
+    # with open('linearregression.pickle', 'wb') as f:
+    #     pickle.dump(clf, f)
+    #
+    # pickle_in = open('linearregression.pickle', 'rb')
+    # clf = pickle.load(pickle_in)
 
     accuracy = clf.score(X_test, y_test)
     # print(accuracy)
@@ -54,6 +54,8 @@ def get_date_main():
     style.use('ggplot')
     # 这里不懂取的什么
     last_date = df.iloc[-1].name
+    print(df)
+    print(last_date)
     last_unix = last_date.timestamp()
     one_day = 8640
     next_unix = last_unix + one_day
