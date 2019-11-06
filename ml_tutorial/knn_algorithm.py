@@ -2,12 +2,11 @@
 # @Auth: yanan.wu
 # @Desc:
 
-import numpy as np
-from math import sqrt
-import matplotlib.pyplot as plt
-from matplotlib import style
 import warnings
 from collections import Counter
+
+import numpy as np
+from matplotlib import style
 
 
 def prepare_dataset():
