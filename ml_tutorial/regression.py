@@ -1,15 +1,15 @@
 # coding: utf-8
 
-import pandas as pd
-import quandl
-import math, datetime
+import datetime
+import math
+
+import matplotlib.pyplot as plt
 import numpy as np
-from sklearn import preprocessing, model_selection, svm
+import quandl
+from matplotlib import style
+from sklearn import preprocessing
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import train_test_split
-import matplotlib.pyplot as plt
-from matplotlib import style
-import pickle
 
 
 def get_date_main():
